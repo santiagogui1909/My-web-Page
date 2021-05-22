@@ -1,4 +1,3 @@
-import React from 'react';
 import './Menu.css';
 
 const Menu = ({onScroll}) => {
@@ -9,10 +8,11 @@ const Menu = ({onScroll}) => {
 
     return (
         <nav className={`container-menu ${onScroll > 20 ? "scroll" : null}`}>
-            <a href="">Inicio</a>
-            <a href="#about">¿Quien Soy?</a>
-            <a href="#conocimientos">Conocimientos</a>
-            <a href="">Contacto</a>
+            <a href="#top"><span className="icon-home"></span>Inicio</a>
+            <a href="#about"> <span className="icon-child"></span>¿Quien Soy?</a>
+            <a href="#conocimientos"><span className="icon-commenting"></span>Conocimientos</a>
+            <a href="#portafolio"><span className="icon-folder-open"></span>Portafolio</a>
+            <a href="#contacto"> <span className="icon-user-add"></span>Contacto</a>
         </nav>
     )
 }

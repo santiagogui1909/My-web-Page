@@ -8,7 +8,7 @@
 }
 
 .container-menu a {
-    padding: 45px;
+    padding: 35px;
     text-decoration: none;
     font-size: 15px;
     color: #fff;
@@ -19,6 +19,10 @@
 }
 
 .scroll {
-    background:rgb(0, 0, 0);
+    background: #000000;
     transition: all 0.5s ease;
+}
+
+a span {
+    padding-right:7px;
 }

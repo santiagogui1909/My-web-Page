@@ -1,6 +1,6 @@
 .container-conocimientos{
-    padding: 10px;
-    background: rgb(0, 10, 36);
+    padding: 30px 0 80px 0 ;
+    background: #03071E;
 }
 
 .container-front{
@@ -15,109 +15,87 @@
     padding: 20px;
 }
 
-.container-otros{
-    display: flex;
-    flex-direction: row;
-    padding: 120px;
-}
-
 .titulo-front{
-    color: rgb(0, 255, 242);
+    color: rgb(0, 182, 189);
     font-size: 50px;
     padding: 40px 0 0 175px;
 }
 
 .titulo-backend{
-    color: rgb(0, 255, 242);
+    color: rgb(0, 182, 189);
     font-size: 50px;
     padding: 0px 0 60px 175px;
-}
-
-.titulo-otro{
-    color: rgb(0, 255, 242);
-    font-size: 50px;
-    padding: 40px 0 0 175px;
 }
 
 .targeta{
     padding: 40px;
     margin: auto;
-    background: #fff;
+    background: rgb(255, 255, 255);
     border-radius: 20px;
     -webkit-transition:all .9s ease; /* Safari y Chrome */
     -moz-transition:all .9s ease; /* Firefox */
-    -o-transition:all .9s ease; /* IE 9 */
-    -ms-transition:all .9s ease; /* Opera */
 }
 
 .targeta:hover{
     -webkit-transform:scale(1.25);
     -moz-transform:scale(1.25);
-    -ms-transform:scale(1.25);
-    -o-transform:scale(1.25);
-    transform:scale(1.2);
 }
+
+/* @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 10s linear;
+    }
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  } */
+
+@media (prefers-reduced-motion: no-preference) {
+    .react-logo {
+      animation: react-logo-spin infinite 8s linear;
+    }
+  }
+
+  @keyframes react-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
 .targeta-backend{
     display: flex;
     justify-content: center;
-    width: 400px;
+    width: 250px;
     margin: auto;
-    border-radius: 80px;
-}
-
-.targeta-backend{
-    padding: 40px;
-    margin: auto;
-    background: #fff;
     border-radius: 20px;
-    -webkit-transition:all .9s ease; /* Safari y Chrome */
-    -moz-transition:all .9s ease; /* Firefox */
-    -o-transition:all .9s ease; /* IE 9 */
-    -ms-transition:all .9s ease; /* Opera */
-}
-
-.targeta-backend:hover{
-    -webkit-transform:scale(1.25);
-    -moz-transform:scale(1.25);
-    -ms-transform:scale(1.25);
-    -o-transform:scale(1.25);
-    transform:scale(1.2);
-}
-
-.targeta-otros{
-    margin: auto;
-    border-radius: 80px;
-}
-
-.targeta-otros p{
-    text-align: center;
-    line-height: 100px;
-    color:rgb(255, 255, 255);
-    font-size: 30px;
-    text-decoration: underline rgb(0, 247, 255);
+    padding: 40px;
+    background: rgb(255, 255, 255);
 }
 
 .targeta p{
     text-align: center;
-    line-height: 80px;
-    color:rgb(0, 0, 0);
+    padding-top: 35px;
+    color: rgb(0, 0, 0);
     font-size: 30px;
+
 }
 
 .targeta img{
-    width: 150px;
-    height: 150px;
+    width: 105px;
+    height: 100px;
 }
 
 .targeta-backend img{
-    width: 180px;
-    height: 200px;
+    width: 160px;
+    height: 180px;
 }
-
-.targeta-otros img{
-    width: 250px;
-    height: 250px;
-}
-
 

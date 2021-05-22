@@ -1,8 +1,6 @@
-import React from 'react';
 
 import css from '../../media/Css.png'
 import Figma from '../../media/figma.png'
-import GitHub from '../../media/Git Hub2.svg'
 import Git from '../../media/git-icon.svg'
 import html from '../../media/Html.png'
 import Java from '../../media/Java.svg'
@@ -19,20 +17,24 @@ const Conocimientos = () => {
             <h1 className="titulo-front">Frontend</h1>
             <div className="container-front">
                 <div className="targeta">
-                    <img src={html}></img>
-                    <p>HTML</p>
+                    <img src={html} className="react-logo"></img>
+                    <p>Html</p>
                 </div>
                 <div className="targeta">
-                    <img src={css}></img>
+                    <img src={css} className="react-logo"></img>
                     <p>Css</p>
                 </div>
                 <div className="targeta">
-                    <img src={js}></img>
-                    <p>Javascript</p>
+                    <img src={js} className="react-logo"></img>
+                    <p>Js</p>
                 </div>
                 <div className="targeta">
-                    <img src={Reactt}></img>
+                    <img src={Reactt} className="react-logo"></img>
                     <p>React</p>
+                </div>
+                <div className="targeta">
+                    <img src={Figma} className="react-logo"></img>
+                    <p>Figma</p>
                 </div>
             </div>
  
@@ -44,21 +46,8 @@ const Conocimientos = () => {
                 <div className="targeta-backend">
                     <img src={MySQL}></img>
                 </div>
-            </div>
-
-            <h1 className="titulo-otro">Otros</h1>
-            <div className="container-otros">
-                <div className="targeta-otros">
+                <div className="targeta-backend">
                     <img src={Git}></img>
-                    <p>Git</p>
-                </div>
-                <div className="targeta-otros">
-                    <img src={GitHub}></img>
-                    <p>Git Hub</p>
-                </div>
-                <div className="targeta-otros">
-                    <img src={Figma}></img>
-                    <p>Figma</p>
                 </div>
             </div>
         </div>

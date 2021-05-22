@@ -21,11 +21,14 @@
 .container-portada h1{
     font-size: 50px;
     letter-spacing: 3px;
+    
 }
 
 .container-portada p{
     line-height: 2.5;
     font-size: 30px;
+    color: rgb(20, 255, 243);
+
 }
 
 @media screen and (max-width: 960px) {
