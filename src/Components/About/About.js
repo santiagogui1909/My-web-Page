@@ -1,26 +1,33 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import FotPerfil from '../../media/foto.jpeg'
 
 import './About.css'
 
-const About= () => {
+const About = () => {
 
     return (
 
         <div className="about-container" id="about">
-            <div className="about-desc">
-                <h3>¿Quien Soy?</h3>
+            <article className="about-desc">
+                <h2>¿Who I Am?</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
-                    provident inventore quod voluptates sequi. Quis, necessitatibus omnis
-                    iusto perferendis dolores voluptate et dolorum inventore autem nemo,
-                    quos eveniet magni nesciunt.
+                    Hello, my name is Santiago, I am a junior Web UI developer, passionate about technology, innovation,
+                    the development of new systems,I like to play football, play sports, video games, meet new people and share experiences.
                 </p>
-            </div>
-            <div className="about-img">
+                <p>
+                    Every day I seek to learn new concepts, I like to help others, teamwork, to be able to learn from the experiences and advice
+                    of the people around me, I want to learn and further develop my skills as a Frontend developer, to be able to create
+                    applications that help improve people's lives, creating solutions for great technological development.
+                </p>
+            </article>
+            <article className="about-img">
                 <img src={FotPerfil}></img>
-                <a href="" target="_blank">Santiago Guillen Ramirez</a>
-            </div>
+                <section className="box-titleName">
+                    <a href="" target="_blank">Santiago Guillen Ramirez</a>
+                </section>
+            </article>
         </div>
     )
 }

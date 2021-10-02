@@ -1,65 +1,99 @@
-
 .about-container {
-    display: flex;
-    padding: 100px 0 60px 0;
-    background:rgba(212, 212, 212, 0.363);
+  display: flex;
+  padding: 80px 0 90px 0;
+  background: rgba(212, 212, 212, 0.363);
+  flex-wrap: wrap;
+}
+
+.about-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 46%;
+  padding: 0 180px 0 80px;
+  color: #fff;
+}
+
+.about-desc h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 2.7rem;
+  color: rgb(0, 192, 182);
+}
+
+.about-desc p {
+  line-height: 1.5;
+  color: rgb(0, 0, 0);
+  padding-bottom: 18px;
+  font-size: 1.1rem;
+}
+
+.about-img img {
+  width: 350px;
+  height: 380px;
+  border-radius: 100%;
+}
+
+.box-titleName a {
+  color: rgb(14, 190, 235);
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.box-titleName {
+  margin-top: 25px;
+  text-align: center;
+  border-radius: 28px;
+  padding: 12px;
+  background-color: #1C2541;
+  text-decoration: none;
+}
+
+.box-titleName:hover {
+  box-shadow: 0px 8px 1px #01f5e9;
+  transition: box-shadow 0.5s;
+}
+
+@media (max-width: 600px) {
+
+  .about-container {
+    padding: 20px;
+    flex-wrap: wrap;
   }
   
   .about-desc {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 40%;
-    padding: 0 100px 0 120px;
+    width: 90%;
+    padding: 10px;
     color: #fff;
   }
   
-  .about-desc h3 {
+  .about-desc h2 {
     margin-bottom: 30px;
-    font-size: 45px;
+    font-size: 28px;
     color: rgb(0, 192, 182);
   }
-  
+
   .about-desc p {
+    font-size: 13px;
     line-height: 1.5;
-    color: rgb(0, 0, 0);
   }
-  
-  .about-img{
-    width: 30%;
+
+  .box-titleName {
+    text-align: center;
+    width: 100%;
+    padding:10px;
   }
 
   .about-img img {
-    width: 520px;
-    height: 480px;
+    width: 220px;
+    height: 240px;
+    padding: 0px;
   }
 
-  .about-img a{
-    color: rgb(0, 0, 0);
-    font-size: 25px;
-    text-decoration: none;
-    padding-left: 125px;
+  .box-titleName a {
+    font-size: 16px;
+  }
 }
-
-.about-img a:before {
-    content: "";
-    position: absolute;
-    width: 5.9%;
-    height: 5px;
-    top: 185%;
-    background-color: #00ffff;
-    z-index: 1;
-    transform: scaleX(0);
-    transition: transform 0.5s ease-in-out;
-}
-
-.about-img a:hover:before {
-    transform: scaleX(3.5);
-    transform-origin: left;
-}
-
-
-
 
 
 
@@ -98,5 +132,3 @@
 .btn-mas:active {
     transform: scale(0.98);
 } */
-  
-
