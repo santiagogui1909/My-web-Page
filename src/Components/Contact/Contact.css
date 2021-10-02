@@ -1,0 +1,231 @@
+.title-contact{
+    color: #00f7ff;
+    background: #03071E;
+    text-align: center;
+    padding: 100px 0 10px 0;
+    font-size: 40px;
+    text-transform: capitalize;
+    border-bottom: 6px solid rgb(10, 195, 228);
+}
+
+.container-contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #03071E;
+    padding: 30px;
+}
+
+/* Estilos botones redes sociales */
+
+.title-redes{
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 26px;
+    text-transform: capitalize;
+}
+
+h4,
+label{
+    text-transform: capitalize;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 85px;
+    height: 85px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.8s;
+}
+
+.icon a {
+    text-decoration: none;
+}
+
+.icon:nth-child(1):hover {
+    box-shadow: 0px 10px #d4d4d4;
+}
+
+.icon:nth-child(2):hover {
+    box-shadow: 0px 10px #c32aa3;
+}
+
+.icon:nth-child(3):hover {
+    box-shadow: 0px 10px #0057c9;
+}
+
+.icon-github-circled {
+    font-size: 35px;
+    color: #a3a3a3;
+    filter: drop-shadow(0px 0px 8px #8a8a8a);
+}
+
+.icon-instagram {
+    font-size: 35px;
+    color: #c32aa3;
+    filter: drop-shadow(0px 0px 8px #c32aa3);
+}
+
+.icon-linkedin {
+    font-size: 35px;
+    color: #0057c9;
+    filter: drop-shadow(0px 0px 8px #0057c9);
+}
+
+/* estilos info contact */
+
+.info-contact {
+    padding:15px;
+    margin: 10px;
+}
+
+.info-contact h4 {
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #fff;
+    border-bottom: 2px solid #00f7ff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.info-contact p {
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+}
+
+.info-contact span {
+    padding: 10px;
+}
+
+.icon-gmail{
+    color: rgb(255, 61, 61);
+    font-size: 18px;
+}
+
+.icon-whatsapp{
+    color: rgb(0, 170, 37);
+    font-size: 18px;
+}
+
+/* estilos formulario */
+
+.add-form {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    margin: 15px 0;
+}
+
+.form-control label {
+    display: block;
+    font-size: 26px;
+    color: #00f7ff;
+    padding-left: 20px;
+}
+
+.form-control input {
+    width: 500px;
+    height: 40px;
+    margin: 5px;
+    padding: 3px 7px;
+    font-size: 17px;
+    border-radius: 6px;
+    border: none;
+}
+
+.form-control textarea {
+    width: 500px;
+    height: 80px;
+    margin: 5px;
+    padding: 3px 7px;
+    font-size: 17px;
+    border-radius: 6px;
+    border: none;
+}
+
+.btn-enviar{
+    text-align: center;
+    padding: 5px;
+}
+
+.btn-enviar input{
+    display: inline-block;
+	padding: 15px;
+    width: 30%;
+    font-size: 20px;
+	border: 0.125rem solid #14bf98;
+	border-radius: 0.25rem;
+	background-color: #14bf98;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-enviar input:hover{
+    background-color: transparent;
+	color: #14bf98;
+	text-decoration: none;
+}
+
+/* styles for the contacts in responsive */
+
+@media (max-width: 480px) {
+    
+    .container-contact {
+        padding: 10px;
+    }
+    
+    /* Estilos botones redes sociales */
+    
+    .title-redes{
+        color: #ffffff;
+        text-align: center;
+        font-size: 25px;
+        padding: 30px 0px;
+        text-transform: capitalize;
+    }
+    
+    /* estilos formulario */
+    
+    .add-form {
+        margin-bottom: 20px;
+    }
+    
+    .form-control label {
+        font-size: 16px;
+        padding-left: 20px;
+    }
+    
+    .form-control input {
+        width: 300px;
+        height: 30px;
+        padding: 4px;
+        font-size: 14px;
+    }
+    
+    .form-control textarea {
+        width: 300px;
+        height: 60px;
+        margin: 5px;
+        padding: 3px 7px;
+        font-size: 17px;
+        border-radius: 6px;
+        border: none;
+    }
+    
+    .btn-enviar input{
+        padding: 6px;
+    }
+}

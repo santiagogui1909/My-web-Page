@@ -5,7 +5,7 @@ import "../../index.css";
 const Footer = () => {
     return (
         <footer>
-            <p>Copyright &copy; santiago Guillen 2021 </p>
+            <p>Copyright &copy; 2021 - Santiago Guillen</p>
         </footer>
     )
 }

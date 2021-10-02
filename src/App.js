@@ -1,17 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import "./Fontello/css/fontello.css";
-import Menu from './Components/MenuNav/Menu';
-import About from './Components/About/About';
-import Portada from './Components/Portada/Portada';
-import Conocimientos from './Components/Conocimientos/Conocimientos';
-import Slider from './Components/Portafolio/Slider';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+
+import CoverPage from './Components/Coverpage/coverPage';
+import Briefcase from './Components/Briefcase/Briefcase';
+import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
-import Contacto from "./Components/Contacto/Contacto";
 
-
+import './index.css';
 
 const App = () => {
-
 
   const [scroll, setScroll] = useState(0);
 
@@ -26,17 +24,36 @@ const App = () => {
 
   return (
     <div>
-      <Menu onScroll={scroll} />
-      <Portada />
-      <About />
-      <Conocimientos />
-      <Slider />
-      <Contacto />
+      <Router basename={process.env.PUBLIC_URL}>
+        <nav className={`container-menu ${scroll > 20 ? "scroll" : null}`}>
+          <ul class="nav-menu">
+            <li>
+              <Link to="/" className="optionNav">
+                <span className="icon-up-open"></span>Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/Briefcase" className="optionNav">
+                <span className="icon-folder-open"></span>Briefcase
+              </Link>
+            </li>
+            <li>
+              <Link to="/Contact" className="optionNav">
+                <span className="icon-user-add"></span>Contact
+              </Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Switch>
+          <Route path="/" component={CoverPage} exact />
+          <Route path="/Briefcase" component={Briefcase} exact />
+          <Route path="/Contact" component={Contact} exact />
+        </Switch>
+      </Router>
       <Footer />
-
     </div>
-  )
+  );
 }
-
 export default App;
 

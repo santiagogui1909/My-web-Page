@@ -1,13 +1,69 @@
-
-*{
+* {
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family:'Courier New', Courier, monospace;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
+
+.logo-nav {
+  width: 154px;
+  height: 35px;
+  padding-left: 70%;
+}
+
+.container-menu {
+  width: 100%;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 20px 0 20px 20px;
+  text-transform: capitalize;
+  list-style: none;
+}
+
+.optionNav{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  list-style: none;
+} 
+
+.optionNav:hover {
+  color: #1ddbbf;
+}
+
+nav ul li:hover {
+  color: #6FFFE9;
+}
+
+nav ul li span {
+  padding-right: 6px;
+  font-size: 1.2rem;
+}
+
+.btn-menu {
+  display: none;
+}
+
+.scroll {
+  background: #192238;
+  transition: all 0.5s ease;
+  z-index: 1000;
+}
+
 
 /**editar la barra lateral*/
 body::-webkit-scrollbar {
@@ -21,14 +77,75 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color:rgb(0, 255, 242);
+  background-color: #6FFFE9;
   border-radius: 3px;
 }
 
 footer {
-  background:rgba(212, 212, 212, 0.363);
-  padding: 30px;
+  background: rgba(255, 255, 255, 0.363);
+  padding: 40px;
+  font-size: 1.2rem;
   text-align: center;
-  color: rgb(59, 59, 59);
+  color: rgb(0, 0, 0);
 
+}
+
+
+@media (max-width: 480px) {
+
+  .container-menu {
+    width: 80%;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 20px;
+    text-transform: capitalize;
+    list-style: none;
+  }
+  
+  .optionNav{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    list-style: none;
+  } 
+  
+  .optionNav:hover {
+    color: #1ddbbf;
+  }
+  
+  nav ul li:hover {
+    color: #6FFFE9;
+  }
+  
+  nav ul li span {
+    padding-right: 6px;
+    font-size: 1.2rem;
+  }
+  
+  .btn-menu {
+    display: none;
+  }
+  
+  .scroll {
+    background: #192238;
+    transition: all 0.5s ease;
+    z-index: 1000;
+  }
+
+
+  footer {
+    padding: 0px;
+    font-size: .900rem;
+  }
 }
