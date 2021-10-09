@@ -10,8 +10,8 @@ const projects = ({ project }) => {
                         <section className="column-img">
                             <img src={value.img}></img>
                             <article className="btn">
-                                <button>website</button>
-                                <button>repository</button>
+                                <a href={value.url} target="_blank"><button>website</button></a>
+                                <a href={value.gitHub} target="_blank"><button>repository</button></a>
                             </article>
                         </section>
                         <section className="column-information">

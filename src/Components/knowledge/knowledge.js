@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from 'react';
-
 import css from '../../media/Css.png'
 import Git from '../../media/git-icon.svg'
 import html from '../../media/Html.png'
-import contentFul from '../../media/contentful.png'
+import Scrum from '../../media/Scrum.png'
 import js from '../../media/JS.png'
-import MySQL from '../../media/Mysql.png'
+import Figma from '../../media/figma.png'
 import Reactt from '../../media/React.png'
 
 import './knowledge.css'
@@ -35,16 +33,15 @@ const Knowledge = () => {
                     </div>
                 </section>
 
-                <section id="backend-skills" className="container-backend">
-                    <div className="card-backend">
+                <section className="container-other-skills">
+                    <div className="card-other">
                         <img src={Git}></img>
                     </div>
-                    <div className="card-backend">
-                        <img src={MySQL}></img>
+                    <div className="card-other">
+                        <img src={Scrum}></img>
                     </div>
-
-                    <div className="card-backend">
-                        <img src={contentFul}></img>
+                    <div className="card-other">
+                        <img src={Figma}></img>
                     </div>
                 </section>
             </article>

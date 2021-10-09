@@ -1,21 +1,72 @@
 .box-projects {
     width: 100%;
-    padding-top: 80px;
+    padding-top: 60px;
     color: rgb(2, 2, 2);
     background: #03071E;
 }
 
 .box-info{
-    padding: 30px;
-    background: #959ed3;
+    background: #fafafa;
     color: #000000;
+    display:flex;
+}
+
+.box-info section{
+    width: 60%;
+    padding: 78px;
+}
+
+.information p{
+    padding: 60px;
+    font-size: 1.4rem;
+    line-height : 2.6rem;
+    color: #ffffff;
+    background: #08b4ca;
+    border-radius: 80px 0px 80px 0px;
+    box-shadow: 10px 10px 40px #000000;
+}
+
+.img-information img{
+    width: 84%;
+    padding-left: 60px;
+}
+
+.worksSection{
+    background: #03071E;
+    padding:40px;
+    text-align: center;
+}
+
+.worksSection img{
+    width: 30%;
+    background: #fdfdfd;
+    padding:20px;
+    border-radius: 20px;
+}
+
+.worksSection p{
+    padding:5px;
+    color: #fdfdfd;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.titleProjects{
+    text-align: center;
+    color: #ffffff;
+    font-size: 3rem;
+    padding: 20px;;
+    text-transform: capitalize;
+    background:rgb(8, 226, 226);
+    letter-spacing: 2px;
 }
 
 .projects {
     padding:40px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    gap: 40px;
     grid-auto-rows: minmax(10px, auto);
 }
 
@@ -30,8 +81,8 @@
     background: #fff;
     border-radius: 15px;
     padding-top:20px;
-    margin: 30px 0 40px 0;
-    box-shadow: 20px 20px 0px rgb(8, 226, 226);
+    margin: 40px 0 40px 0;
+    box-shadow: 9px 9px 0px rgb(8, 226, 226);
 }
 
 /* section left */
@@ -43,14 +94,15 @@
 .column-img img {
     float: left;
     position: relative;
-    left: 25px;
+    left: 20px;
     top: -50px;
     height: 200px;
-    width: 320px;
-    -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+    width: 310px;
+    -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.527);
+    -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.329);
+    box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.582);
     overflow: hidden;
+    border-radius: 4px;
 }
 
 /* section rigth */
@@ -58,13 +110,18 @@
 .column-information label{
     font-family: 'Times New Roman', Times, serif;
     text-decoration: underline rgb(13, 194, 201);
-    font-size: 1.7rem; 
+    font-size: 1.5rem; 
 }
 
 .column-information p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: .900rem; 
+    font-size: .800rem; 
+    line-height: 1.6;
     padding: 20px;
+}
+
+.column-information p::first-letter {
+    text-transform: capitalize;
 }
 
 .btn button{
@@ -83,9 +140,4 @@
 .btn button:hover{
     cursor:pointer;
     background: #0B132B;
-    color: #09c7e0;
-}
-
-.btn button:focus{
-    border: 3px solid rgb(0, 247, 255);
 }
