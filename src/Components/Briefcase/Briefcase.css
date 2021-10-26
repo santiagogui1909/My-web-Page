@@ -1,69 +1,70 @@
 .box-projects {
     width: 100%;
-    padding-top: 60px;
+    padding-top: 100px;
     color: rgb(2, 2, 2);
     background: #03071E;
 }
 
-.box-info{
+.box-info {
     background: #fafafa;
     color: #000000;
-    display:flex;
+    display: flex;
 }
 
-.box-info section{
+.box-info section {
     width: 60%;
     padding: 78px;
 }
 
-.information p{
+.information p {
     padding: 60px;
     font-size: 1.4rem;
-    line-height : 2.6rem;
+    line-height: 2.6rem;
     color: #ffffff;
     background: #08b4ca;
     border-radius: 80px 0px 80px 0px;
     box-shadow: 10px 10px 40px #000000;
 }
 
-.img-information img{
+.img-information img {
     width: 84%;
     padding-left: 60px;
 }
 
-.worksSection{
+.worksSection {
     background: #03071E;
-    padding:40px;
+    padding: 40px;
     text-align: center;
 }
 
-.worksSection img{
+.worksSection img {
     width: 30%;
     background: #fdfdfd;
-    padding:20px;
+    padding: 20px;
     border-radius: 20px;
 }
 
-.worksSection p{
-    padding:5px;
+.worksSection p {
+    padding: 5px;
     color: #fdfdfd;
     text-align: center;
     font-size: 1.5rem;
 }
 
 
-.titleProjects{
+.titleProjects {
     text-align: center;
     color: #ffffff;
     font-size: 3rem;
-    padding: 20px;;
+    padding: 20px;
+    ;
     text-transform: capitalize;
-    background:rgb(8, 226, 226);
+    background: rgb(8, 226, 226);
     letter-spacing: 2px;
 }
 
 .projects {
-    padding:40px;
+    padding: 40px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
@@ -80,7 +81,7 @@
     justify-content: space-between;
     background: #fff;
     border-radius: 15px;
-    padding-top:20px;
+    padding-top: 20px;
     margin: 40px 0 40px 0;
     box-shadow: 9px 9px 0px rgb(8, 226, 226);
 }
@@ -105,39 +106,158 @@
     border-radius: 4px;
 }
 
+.btn button {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 60px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #12cebe;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px rgba(14, 14, 14, 0.555);
+}
+
+.btn button:hover {
+    cursor: pointer;
+    background: #0B132B;
+}
+
+.btn button:active {
+    background-color: #0B132B;
+    box-shadow: 0 5px rgb(41, 41, 41);
+    transform: translateY(4px);
+  }
+
 /* section rigth */
 
-.column-information label{
+.projectTitle {
     font-family: 'Times New Roman', Times, serif;
     text-decoration: underline rgb(13, 194, 201);
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
 }
 
-.column-information p{
+.information {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: .800rem; 
+    font-size: .800rem;
     line-height: 1.6;
-    padding: 20px;
+    padding: 20px 6px;
 }
 
-.column-information p::first-letter {
+.information::first-letter {
     text-transform: capitalize;
 }
 
-.btn button{
-    text-transform: capitalize;
-    background: #09c7e0;
-    color: rgb(255, 255, 255);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:1.1rem;
-    border: none;
-    padding: 10px;
-    margin-left: 60px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #000000;
+.containerSkills {
+    background: rgb(1, 5, 27);
+    text-align: center;
+    border-radius: 600px 0px 0px 600px;
 }
 
-.btn button:hover{
-    cursor:pointer;
-    background: #0B132B;
+.box-skills {
+    font-size: .700rem;
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 14px;
+    color: rgb(9, 232, 240);
+    background: rgba(2, 3, 24, 0.603);
+    border: 1px solid #00f7ff;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .box-info section {
+        width: 60%;
+        padding: 0px;
+    }
+
+    .information p {
+        padding: 25px;
+        font-size: 0.850rem;
+        line-height: 1rem;
+        border-radius: 0px 40px 40px 0px;
+    }
+
+    .img-information img {
+        width: 80%;
+        padding: 60px 0px 60px 30px;
+    }
+
+    .worksSection {
+        padding-top: 50px;
+    }
+
+    .worksSection img {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .worksSection p {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .titleProjects {
+        font-size: 1.8rem;
+        padding: 10px;
+        ;
+        letter-spacing: 2px;
+    }
+
+    .projects {
+        padding: 12px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container-cards {
+        height: 220px;
+        width: 98%;
+        padding-top: 30px;
+        margin: 50px 0 40px 0;
+    }
+
+    .column-img {
+        margin-right: 20px;
+    }
+
+    .column-img img {
+        float: left;
+        left: 10px;
+        top: -50px;
+        height: 100px;
+        width: 140px;
+    }
+
+    .btn button {
+        text-align: center;
+        font-size: 0.900rem;
+        border: none;
+        padding: 6px 10px;
+        margin: 5px 5px 10px 20px;
+    }
+
+    /* section rigth */
+
+    .projectTitle {
+        font-size: 1rem;
+    }
+
+    .information {
+        font-size: .700rem;
+        line-height: 1.4;
+        padding: 12px 3px;
+    }
+
+    .box-skills {
+        font-size: .600rem;
+        display: inline-block;
+        margin: 10px;
+        padding: 4px 10px;
+    }
 }

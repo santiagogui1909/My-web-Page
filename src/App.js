@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState , useRef} from 'react';
 import "./Fontello/css/fontello.css";
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 
@@ -11,6 +11,7 @@ import './index.css';
 
 const App = () => {
 
+  let topRef = useRef(null);
   const [scroll, setScroll] = useState(0);
 
   const scrollNav = () => {
@@ -23,22 +24,22 @@ const App = () => {
   }, [scroll]);
 
   return (
-    <div>
+    <div ref={topRef}>
       <Router basename={process.env.PUBLIC_URL}>
         <nav className={`container-menu ${scroll > 20 ? "scroll" : null}`}>
           <ul class="nav-menu">
             <li>
-              <Link to="/" className="optionNav">
+              <Link to="/" className="optionNav" onClick={()=> {topRef.current.scrollIntoView(true)}}>
                 <span className="icon-up-open"></span>Home
               </Link>
             </li>
             <li>
-              <Link to="/Briefcase" className="optionNav">
+              <Link to="/Briefcase" className="optionNav" onClick={()=> {topRef.current.scrollIntoView(true)}}>
                 <span className="icon-folder-open"></span>Briefcase
               </Link>
             </li>
             <li>
-              <Link to="/Contact" className="optionNav">
+              <Link to="/Contact" className="optionNav" onClick={()=> {topRef.current.scrollIntoView(true)}}>
                 <span className="icon-user-add"></span>Contact
               </Link>
             </li>

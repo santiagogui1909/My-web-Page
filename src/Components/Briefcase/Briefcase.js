@@ -1,7 +1,7 @@
 /* eslint-disable array-callback-return */
 // import { useEffect, useState } from 'react';
 import Projects from '../listProjects/projects';
-import Web from '../../media/programacion-web.png';
+import Web from '../../media/desarrollo-web.png';
 import Globant from '../../media/globant.png';
 
 import './Briefcase.css';
@@ -20,7 +20,7 @@ const Briefcase = () => {
         {
             "id": 2,
             "name": "Comunicaciones LySanti",
-            "description": "communications is a website for a small business with a variety of products, where you can find information about their services, navigate between different sections, you can communicate with the advisor in different ways and be able to acquire a product easily and without problems.",
+            "description": "is a website for a small business with a variety of products, where you can find information about their services, navigate between different sections and contact forms and links to their social networks in a dynamic way.",
             "img": "https://i.ibb.co/x1MHtGG/comunicaciones-Li-Santy.png",
             "url": "https://santiagogui1909.github.io/ComunicacionesLySanti/",
             "gitHub": "https://github.com/santiagogui1909/ComunicacionesLySanti"
@@ -42,7 +42,6 @@ const Briefcase = () => {
             "gitHub": "https://github.com/santiagogui1909/Calculadora"
         }]
 
-
     return (
         <div className="box-projects">
             <article className="box-info">
@@ -58,7 +57,7 @@ const Briefcase = () => {
             </article>
             <div className="worksSection">
                 <img src={Globant}/>
-                <p>I worked at globant for 6 months as a web intern</p>
+                <p>I worked at globant for 1 year as a web development intern</p>
             </div>
             <h2 className="titleProjects">projects</h2>
             <Projects project={project} />
