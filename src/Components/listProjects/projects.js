@@ -1,6 +1,9 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+import { useState } from 'react';
+import Skills from './skills'
+import './../Briefcase/Briefcase.css';
 
 const projects = ({ project }) => {
-
 
     return (
         <div className="projects">
@@ -10,13 +13,14 @@ const projects = ({ project }) => {
                         <section className="column-img">
                             <img src={value.img}></img>
                             <article className="btn">
-                                <a href={value.url} target="_blank"><button>website</button></a>
-                                <a href={value.gitHub} target="_blank"><button>repository</button></a>
+                                <a href={value.gitHub} target="_blank"><button className="icon-github-circled"></button></a>
+                                <a href={value.url} target="_blank"><button className="icon-laptop"></button></a>
                             </article>
                         </section>
-                        <section className="column-information">
-                            <label>{value.name}</label>
-                            <p>{value.description}</p>
+                        <section>
+                            <label className="projectTitle">{value.name}</label>
+                            <p className="information">{value.description}</p>
+                            <Skills skillId={value.id} />
                         </section>
                     </div>
                 </>

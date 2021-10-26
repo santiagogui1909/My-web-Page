@@ -121,38 +121,146 @@ label{
 /* estilos formulario */
 
 .add-form {
-    margin-bottom: 20px;
+    margin-bottom: 1px;
+    background:rgba(255, 255, 255, 0.945);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .form-control {
-    margin: 15px 0;
+    margin: 6px 0;
 }
 
 .form-control label {
     display: block;
-    font-size: 26px;
-    color: #00f7ff;
+    font-size: 22px;
+    color: #13bcc2;
     padding-left: 20px;
 }
 
 .form-control input {
-    width: 500px;
-    height: 40px;
+    width: 350px;
+    height: 30px;
     margin: 5px;
     padding: 3px 7px;
     font-size: 17px;
     border-radius: 6px;
     border: none;
+    border: 1px solid #03143a;
 }
 
+/* secction alerts for the form */
+
+.alertEmail span{
+    display: none;
+}
+
+.alertGood{
+    font-size:.880rem;
+    font-weight: bold;
+    padding:0px 6px; 
+    color: rgb(6, 233, 36);
+    display:inline;
+}
+
+.alertError{
+    font-size:.880rem;
+    font-weight: bold;
+    padding:0px 6px; 
+    color: #f72727;
+    display:inline;
+}
+
+/* messaje information */
+
+.alert {
+    display: none;
+}
+
+.containerAlert{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.788);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje_modal{
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+    width: 400px;
+    height: 230px;
+    padding: 30px 20px 0px;
+    border-radius: 12px;
+}
+
+.mensaje_modal h3{
+    text-align: center;
+	font-size: 30px;
+	font-weight: 400;
+    color: #030303;
+}
+
+.mensaje_modal h3:after{
+    content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #C5C5C5;
+	margin: 10px 0px 15px;
+}
+
+.icon-bell{
+    border-radius: 50px;
+    color: #f5dd06;
+    margin-right: 10px;
+}
+
+.icon-warning{
+    color: rgb(236, 15, 15);
+    font-size: 1.2em;
+}
+
+.mensaje_modal p{
+    font-size: 22px;
+    margin: 10px;
+}
+
+.alerts::first-letter{
+    text-transform: capitalize;
+}
+
+.btnClose{
+    display: inline-block;
+	padding: 6px 10px;
+	margin-top: 0px;
+
+	background: #ec0303;
+	color: #fff;
+	border-radius: 15px;
+	cursor: pointer;
+
+	float: right;
+}
+
+/* ---------------------------------------------------  */
+
 .form-control textarea {
-    width: 500px;
-    height: 80px;
+    width: 350px;
+    height: 60px;
     margin: 5px;
     padding: 3px 7px;
     font-size: 17px;
     border-radius: 6px;
     border: none;
+    border: 1px solid #03143a;
 }
 
 .btn-enviar{
@@ -162,7 +270,7 @@ label{
 
 .btn-enviar input{
     display: inline-block;
-	padding: 15px;
+	padding: 10px;
     width: 30%;
     font-size: 20px;
 	border: 0.125rem solid #14bf98;
@@ -171,12 +279,17 @@ label{
 	color: rgb(255, 255, 255);
 	text-decoration: none;
 	transition: all 0.2s;
+    text-transform: capitalize;
 }
 
 .btn-enviar input:hover{
     background-color: transparent;
 	color: #14bf98;
 	text-decoration: none;
+}
+
+.alert{
+    color: #00e6ee;
 }
 
 /* styles for the contacts in responsive */
@@ -227,5 +340,25 @@ label{
     
     .btn-enviar input{
         padding: 6px;
+    }
+
+    .mensaje_modal{
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 0px 15px rgb(0, 0, 0);
+        width: 280px;
+        height: 210px;
+    }
+    
+    .mensaje_modal h3{
+        font-size: 25px;
+    }
+    
+    .icon-warning{
+        font-size: 1em;
+    }
+    
+    .mensaje_modal p{
+        font-size: 18px;
+        margin: 10px;
     }
 }

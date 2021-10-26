@@ -1,12 +1,23 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+import { useState } from 'react';
+import AlertCv from './AlertCv';
 import FotPerfil from '../../media/foto.jpg'
 
 import './About.css'
 
 const About = () => {
 
+    const [showAlert, setShowAlert] = useState(false);
+
+    const showOptions = () => {
+        setShowAlert(true);
+    }
+
+    const closeAlert = () =>{
+        setShowAlert(false);
+    }
+    
     return (
 
         <div className="about-container" id="about">
@@ -22,10 +33,14 @@ const About = () => {
                     applications that help improve people's lives, creating solutions for great technological development.
                 </p>
             </article>
+            <section className={showAlert ? "box-show" : "box-hide"}>
+                <AlertCv />
+                <button className="buttonClose" onClick={closeAlert}>❌</button>
+            </section>
             <article className="about-img">
                 <img src={FotPerfil}></img>
-                <section className="box-titleName">
-                    <a href="" target="_blank">Santiago Guillen Ramirez</a>
+                <section className="box-titleName" onClick={showOptions}>
+                    <a>know my cV<span className="icon-paper-plane"></span></a>
                 </section>
             </article>
         </div>

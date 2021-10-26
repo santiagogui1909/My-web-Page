@@ -1,122 +1,104 @@
-
-.container-knowledge{
-  padding: 50px 0px 30px 0px;
+.container-knowledge {
+  padding: 40px 0px 30px 0px;
   background: #03071E;
 }
 
-.title-knowledge{
+.title-knowledge {
   color: #0eeee3;
   font-size: 2.7rem;
   margin-left: 50px;
   text-align: left;
 }
 
-.container-front{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 60px;
+.container-front {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
-.container-other-skills{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 30px;
+.subTitle {
+  color: #faf9f9;
+  ;
+  font-size: 2.4rem;
+  padding: 6px;
+  text-align: center;
 }
 
-.subTitle{
-    color: #faf9f9;;
-    font-size: 2.4rem;
-    padding:6px;
-    text-align: center;
+.card {
+  padding: 46px;
+  margin: 36px;
+  background: rgba(255, 255, 255, 0.219);
+  border-radius: 15px;
+  border: 1px solid #6FFFE9;
+  -webkit-transition: all .9s ease;
+  /* Safari y Chrome */
+  -moz-transition: all .9s ease;
+  /* Firefox */
 }
 
-.card{
-    padding: 40px;
-    margin: auto;
-    background: rgba(255, 255, 255, 0.219);
-    border-radius: 15px;
-    border: 1px solid #6FFFE9;
-    -webkit-transition:all .9s ease; /* Safari y Chrome */
-    -moz-transition:all .9s ease; /* Firefox */
+.card p {
+  font-weight: lighter;
+  text-align: center;
+  padding-top: 30px;
+  color: rgb(255, 255, 255);
+  font-size: 1.4rem;
 }
 
-.card p{
-    font-weight:lighter;
-    text-align: center;
-    padding-top: 30px;
-    color: rgb(255, 255, 255);
-    font-size: 1.4rem;
-}
-.card:hover{
-    -webkit-transform:scale(1.25);
-    -moz-transform:scale(1.25);
+.card:hover {
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .react-logo {
-      animation: react-logo-spin infinite 8s linear;
-    }
+  .react-logo {
+    animation: react-logo-spin infinite 8s linear;
+  }
+}
+
+@keyframes react-logo-spin {
+  from {
+    transform: rotate(0deg);
   }
 
-  @keyframes react-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
   }
-
-.card-other{
-    display: flex;
-    justify-content: center;
-    width: 240px;
-    height:140px;
-    margin: auto;
-    border-radius: 26px;
-    padding: 20px;
-    border-bottom: 10px solid #0af7ff;
-    border-right: 10px solid #05bfc5;
-    background: rgba(251, 251, 251, 0.959);
 }
 
-.card img{
-    width: 120px;
-    height: 110px;
+.card img {
+  width: 100px;
+  height: 100px;
 }
 
-.card-other img{
-    padding-left: 30px;
-    width: 200px;
-    height: 140px;
-    padding: auto;
-}
+@media (max-width: 600px) {
 
-@media (max-width: 480px) {
-
-  .card{
+  .card {
     padding: 30px;
-    margin:40px;
+    margin: 40px;
   }
 
-  .card-other{
-    margin: 25px 20px;
-}
-
-  .title-front{
-    color: #00f7ff;;
+  .title-front {
+    color: #00f7ff;
+    ;
     font-size: 45px;
     text-align: center;
     padding: 10px;
-}
+  }
 
-.title-other{
-    color: #00f7ff;;
-    font-size: 45px;
-    text-align: center;
-    padding: 10px;
-}
+  .card {
+    padding: 26px;
+    margin: 15px;
+  }
+
+  .card p {
+    font-size: 1.1rem;
+  }
+
+  .card img {
+    width: 80px;
+    height: 70px;
+  }
 
 }
