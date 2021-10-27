@@ -292,6 +292,58 @@ label{
     color: #00e6ee;
 }
 
+/* styles page send messaje */
+
+.container-messaje{
+    padding: 60px;
+    background:#03071E;
+}
+
+.box-messaje{
+    width: 100%;
+    background:#f8f8f8;
+    border-radius: 0px 0px 50px 50px;
+}
+
+.title-message{
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-top: 80px solid #0ccfcf;
+}
+
+.title-message h2{
+    position: relative;
+    top: -75px;
+    color: #fffbfb; 
+    z-index: 5px;
+    text-align: center;
+    font-size: 2.8rem;
+    padding:0px;
+    text-transform: capitalize;
+}
+
+.imgSend{
+    text-align: center;
+    padding-bottom:20px;
+}
+
+.imgSend img{
+    width: 350px;
+    height: 350px;
+}
+
+.btn-back{
+    margin-left: 60px;
+    padding:10px;
+    color:#fff;
+    text-transform: capitalize;
+    background: #03143a;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 10px solid #0eebeb;
+    box-shadow: 5px 5px 0px #09e0ce;
+}
+
 /* styles for the contacts in responsive */
 
 @media (max-width: 480px) {

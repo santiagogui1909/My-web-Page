@@ -34,7 +34,7 @@
   border-radius: 100%;
 }
 
-.box-titleName a {
+a {
   color: rgb(15, 238, 238);
   font-size: 1.4rem;
   text-decoration: none;
@@ -57,7 +57,7 @@
   transition: box-shadow 0.2s;
 }
 
-/* section of alert cv */
+/* section of alert cv
 .box-hide {
   display: none;
 }
@@ -127,7 +127,7 @@
 .buttonClose:hover{
   background: rgb(248, 0, 0);
 
-}
+} */
 
 /* ---------------------- */
 

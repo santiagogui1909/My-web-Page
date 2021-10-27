@@ -14,7 +14,7 @@ const Briefcase = () => {
             "name": "FilmsWeb",
             "description": "filmsWeb is a movie website created in React, where you can interact, know the latest movie releases, know the ranking of movies around the world, and you can find detailed information about old and new movies.",
             "img": "https://i.ibb.co/nfN3gXw/filmsweb.png",
-            "url": "https://santiagogui1909.github.io/FilmsWeb/",
+            "url": "https://films-web.herokuapp.com/FilmsWeb/",
             "gitHub": "https://github.com/santiagogui1909/FilmsWeb"
         },
         {

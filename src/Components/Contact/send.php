@@ -6,7 +6,7 @@ $correo = $_POST['email'];
 $mensaje = $_POST['messaje'];
 
 // Datos para el correo
-$destinatario = "santiagogui1909@gmail.com";
+$destinatario = "santiagoguillenr19@gmail.com";
 $asunto = "Contacto desde mi web";
 
 $carta = "De: $nombre \n";
@@ -15,6 +15,5 @@ $carta .= "Mensaje: $mensaje";
 
 // Enviando Mensaje
 mail($destinatario, $asunto, $carta);
-header('Location:MessajeSend.js');
-
+header('Location: send.html');
 ?>

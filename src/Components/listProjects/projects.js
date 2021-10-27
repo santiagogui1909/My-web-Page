@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { useState } from 'react';
 import Skills from './skills'
 import './../Briefcase/Briefcase.css';
 
