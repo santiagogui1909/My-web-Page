@@ -36,7 +36,7 @@ const CoverPage = () => {
     }, []);
 
     return (
-        <div>
+        <div id="home">
             <header className="container-coverPage">
                 <video loop autoPlay muted>
                     <source src={videoFondo} type="video/mp4" />

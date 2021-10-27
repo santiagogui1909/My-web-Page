@@ -16,6 +16,16 @@
     padding: 78px;
 }
 
+.information {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: .800rem;
+    line-height: 1.6;
+    padding: 20px 6px;
+}
+
+.information::first-letter {
+    text-transform: capitalize;
+}
 .information p {
     padding: 60px;
     font-size: 1.4rem;
@@ -141,17 +151,6 @@
     font-size: 1.5rem;
 }
 
-.information {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: .800rem;
-    line-height: 1.6;
-    padding: 20px 6px;
-}
-
-.information::first-letter {
-    text-transform: capitalize;
-}
-
 .containerSkills {
     background: rgb(1, 5, 27);
     text-align: center;
@@ -177,6 +176,7 @@
     }
 
     .information p {
+        margin: 10px 0px;
         padding: 25px;
         font-size: 0.850rem;
         line-height: 1rem;
