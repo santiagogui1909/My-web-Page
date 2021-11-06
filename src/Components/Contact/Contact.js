@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { useForm } from '@formspree/react';
+import MessajeSend from './MessajeSend';
 import Alert from './Alert';
 import "./Contact.css";
 
@@ -14,6 +16,13 @@ const Contact = () => {
     const regexEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     const [getArray, setArray] = useState([]);
     const [close, setClose] = useState(false);
+
+    // state of form
+    const [state, handleSubmit] = useForm("mleayalv");
+
+    if (state.succeeded) {
+        return <MessajeSend />;
+    }
 
     const array = [];
 
@@ -87,7 +96,7 @@ const Contact = () => {
 
                     <section className="info-contact">
                         <h4>email</h4>
-                        <p><span className="icon-gmail"></span>santiagogui@gmail.com</p>
+                        <p><span className="icon-gmail"></span>devsantiagogui@gmail.com</p>
                     </section>
                     <section className="info-contact">
                         <h4>phone</h4>
@@ -108,7 +117,7 @@ const Contact = () => {
 
                 <article>
                     <h3 className="title-redes">contact me</h3>
-                    <form action="send.php" method="post" className="add-form">
+                    <form  className="add-form" onSubmit={handleSubmit}>
                         <div className="form-control">
                             <label>name</label>
                             <input type="text" onChange={getName} name="name" placeholder="Enter your name" />
@@ -129,7 +138,7 @@ const Contact = () => {
                             { sendCorrect === true ?
                                 <input onSubmit={checkSubmit} type="submit" value="send" />
                                 :
-                                <input onClick={checkSubmit} type="submit" value="verify" />
+                                <input onClick={checkSubmit} type="submit" value="verify" disabled={state.submitting} />
                             }
                         </div>
                     </form>
