@@ -413,4 +413,36 @@ label{
         font-size: 18px;
         margin: 10px;
     }
+
+    /* messaje send */
+
+    .container-messaje{
+        padding: 130px 20px;
+    }
+    
+    .box-messaje{
+        border-radius: 0px 0px 20px 20px;
+    }
+    
+    .title-message h2{
+        top: -65px;
+        font-size: 2rem;
+    }
+    
+    .imgSend{
+        text-align: center;
+        padding-bottom:80px;
+    }
+    
+    .imgSend img{
+        padding-top: 80px;
+        width: 150px;
+        height: 150px;
+    }
+    
+    .btn-back{
+        margin-left: 115px;
+        padding:10px;
+        color:#fff;
+    }
 }

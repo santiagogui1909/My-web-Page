@@ -22,7 +22,7 @@ const About = () => {
             </article>
             <article className="about-img">
                 <img src={FotPerfil}></img>
-                <a href="https://drive.google.com/file/d/1HNY5Tp3vPPvF2J6_RZY02p0KBqMVbkzr/view?usp=sharing" target="_blank">
+                <a href="https://drive.google.com/file/d/1M388wWELpyprjM1M8b_mPgG0TQxLZlC6/view?usp=sharing" target="_blank">
                     <section className="box-titleName">
                         know my cV<span className="icon-paper-plane"></span>
                     </section>
