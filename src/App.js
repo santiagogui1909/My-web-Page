@@ -29,7 +29,7 @@ const App = () => {
 
     window.onload = function () {
       setOnload(false);
-      setTimeout(alertFunc, 8000);
+      setTimeout(alertFunc, 2000);
     };
 
     function alertFunc() {
