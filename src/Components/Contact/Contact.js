@@ -120,11 +120,11 @@ const Contact = () => {
                     <form  className="add-form" onSubmit={handleSubmit}>
                         <div className="form-control">
                             <label>name</label>
-                            <input type="text" onChange={getName} name="name" placeholder="Enter your name" />
+                            <input type="text" onChange={getName} name="name" placeholder="Enter your name" autocomplete="off" />
                         </div>
                         <div className="form-control">
                             <label>mail</label>
-                            <input type="text" onChange={getEmail} name="email" placeholder="Enter your email" />
+                            <input type="text" onChange={getEmail} name="email" placeholder="Enter your email" autocomplete="off" />
                         </div>
                         <section className="alertEmail">
                             <label className={changeClass ? "alertGood" : "alertError"}>{messageAlert}</label>
@@ -136,7 +136,7 @@ const Contact = () => {
 
                         <div className="btn-enviar" >
                             { sendCorrect === true ?
-                                <input onSubmit={checkSubmit} type="submit" value="send" />
+                                <input id="inputSend" onSubmit={checkSubmit} type="submit" value="send" />
                                 :
                                 <input onClick={checkSubmit} type="submit" value="verify" disabled={state.submitting} />
                             }
