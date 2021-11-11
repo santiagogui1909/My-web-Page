@@ -11,7 +11,7 @@ const About = () => {
             <article className="about-desc">
                 <h2>¿Who I Am?</h2>
                 <p>
-                    Hello, my name is Santiago, I am a junior Web UI developer, passionate about technology, innovation,
+                    Hello, my name is Santiago, I am a junior Front-end developer, passionate about technology, innovation,
                     the development of new systems,I like to play football, play sports, video games, meet new people and share experiences.
                 </p>
                 <p>

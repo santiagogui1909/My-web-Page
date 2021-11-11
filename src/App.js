@@ -25,26 +25,20 @@ const App = () => {
     window.addEventListener("scroll", scrollNav);
   }, [scroll]);
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    window.onload = function () {
-      setOnload(false);
-      setTimeout(alertFunc, 8000);
-    };
+  //   window.onload = function () {
+  //     setOnload(false);
+  //     setTimeout(alertFunc, 2000);
+  //   };
 
-    function alertFunc() {
-      setOnload(true);
-    }
-  })
+  //   function alertFunc() {
+  //     setOnload(true);
+  //   }
+  // })
 
   return (
     <>
-      {onloadPaje === false ? 
-        <section className="containerLoad">
-          <p>loading please wait... 🔌</p> 
-          <img src={imgLoading}></img>
-        </section>
-      : 
       <div ref={topRef}>
         <Router basename={process.env.PUBLIC_URL}>
           <nav className={`container-menu ${scroll > 20 ? "scroll" : null}`}>
@@ -75,9 +69,16 @@ const App = () => {
         </Router>
         <Footer />
       </div>
-      }
     </>
   );
 }
 export default App;
 
+
+
+/* /* {onloadPaje === false ? 
+        <section className="containerLoad">
+          <p>loading please wait... 🔌</p> 
+          <img src={imgLoading}></img>
+        </section>
+      :  }*/
