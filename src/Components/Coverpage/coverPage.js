@@ -42,7 +42,7 @@ const CoverPage = () => {
                     <source src={videoFondo} type="video/mp4" />
                 </video>
                 <h1>{printStr}</h1>
-                <p className={(perfilStatus === true) ? "showPerfil" : "hidePerfil"}><span className="icon-code-1" Web></span>Web UI Developer<span className="icon-code" Web></span></p>
+                <p className={(perfilStatus === true) ? "showPerfil" : "hidePerfil"}><span className="icon-code-1" Web></span>Junior Frontend Developer<span className="icon-code" Web></span></p>
             </header>
             <About />
             <Knowledge />
