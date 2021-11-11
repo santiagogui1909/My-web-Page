@@ -35,13 +35,13 @@
 
 @keyframes slidein {
   from {
-    margin-left: 10%;
+    margin-left: 5%;
     width: 70%;
     color: #00000000;
   }
 
   to {
-    margin-left: 25.2%;
+    margin-left: 15.2%;
     width: 43.5%;
   }
 }
@@ -58,7 +58,7 @@
 
   .showPerfil {
     text-align: center;
-    font-size: 22px;
+    font-size: 16px;
     width: 85%;
     display: hidden;
 
