@@ -3,7 +3,11 @@ Este es el codigo de mi portafolio web donde podras encontrar informacion acerca
 
 
 Link : https://my-site-santiago.herokuapp.com/
-![image](https://user-images.githubusercontent.com/64671549/142656054-fb304eb8-af1d-4a1d-8509-0a32613e689f.png)
-![image](https://user-images.githubusercontent.com/64671549/142656085-deb1dda2-d0d8-4f9b-b963-37cd74fd1669.png)
+
+![image](https://user-images.githubusercontent.com/64671549/142656191-6d1a4c5a-b6c4-4412-af08-1a64eae16072.png)
+
+![image](https://user-images.githubusercontent.com/64671549/142656234-651af9f4-82c1-476a-badb-6f36fbe52746.png)
+
+
 
 
