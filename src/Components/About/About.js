@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import FotPerfil from '../../media/foto.jpg'
+import FotPerfil from '../../media/foto2.jpg'
 import './About.css'
 
 const About = () => {

@@ -7,14 +7,13 @@ import Briefcase from './Components/Briefcase/Briefcase';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 
-import imgLoading from './media/sala-de-espera.png';
+import logo from './media/logo_transparent.png';
 import './index.css';
 
 const App = () => {
 
   let topRef = useRef(null);
   const [scroll, setScroll] = useState(0);
-  const [onloadPaje, setOnload] = useState(0);
 
   const scrollNav = () => {
     const posicion = window.pageYOffset;
@@ -24,18 +23,6 @@ const App = () => {
   useEffect(() => {
     window.addEventListener("scroll", scrollNav);
   }, [scroll]);
-
-  // useEffect(() => {
-
-  //   window.onload = function () {
-  //     setOnload(false);
-  //     setTimeout(alertFunc, 2000);
-  //   };
-
-  //   function alertFunc() {
-  //     setOnload(true);
-  //   }
-  // })
 
   return (
     <>
@@ -59,6 +46,7 @@ const App = () => {
                 </Link>
               </li>
             </ul>
+            <img className="logo" src={logo}></img>
           </nav>
 
           <Switch>
