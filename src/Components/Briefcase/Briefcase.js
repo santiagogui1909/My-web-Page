@@ -1,46 +1,19 @@
 /* eslint-disable array-callback-return */
-// import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Projects from '../listProjects/projects';
 import Web from '../../media/desarrollo-web.png';
 import Globant from '../../media/globant.png';
+import data from '../../data/data.json';
 
 import './Briefcase.css';
 
 const Briefcase = () => {
 
-    const project = [
-        {
-            "id": 1,
-            "name": "FilmsWeb",
-            "description": "filmsWeb is a movie website created in React, where you can interact, know the latest movie releases, know the ranking of movies around the world, and you can find detailed information about old and new movies.",
-            "img": "https://i.ibb.co/nfN3gXw/filmsweb.png",
-            "url": "https://films-web.herokuapp.com/FilmsWeb/",
-            "gitHub": "https://github.com/santiagogui1909/FilmsWeb"
-        },
-        {
-            "id": 2,
-            "name": "Comunicaciones LySanti",
-            "description": "is a website for a small business with a variety of products, where you can find information about their services, navigate between different sections and contact forms and links to their social networks in a dynamic way.",
-            "img": "https://i.ibb.co/x1MHtGG/comunicaciones-Li-Santy.png",
-            "url": "https://santiagogui1909.github.io/ComunicacionesLySanti/",
-            "gitHub": "https://github.com/santiagogui1909/ComunicacionesLySanti"
-        },
-        {
-            "id": 3,
-            "name": "Guess The Movie",
-            "description": "guess the movie is a little game, where you can guess the name of the movie by interpreting the emogis and have fun.",
-            "img": "https://i.ibb.co/02GJb56/Guess-The-Films.png",
-            "url": "https://santiagogui1909.github.io/Guess-The-Movie/",
-            "gitHub": "https://github.com/santiagogui1909/Guess-The-Movie"
-        },
-        {
-            "id": 4,
-            "name": "Calculadora",
-            "description": "it is a small project of a calculator with which you can perform very basic calculations with the well-known mathematical operators",
-            "img": "https://i.ibb.co/jbWPD3m/Calculadora.png",
-            "url": "https://santiagogui1909.github.io/Calculadora/",
-            "gitHub": "https://github.com/santiagogui1909/Calculadora"
-        }]
+    const [project , setProject] = useState([]);
+
+    useEffect(() => {
+        setProject(data);
+    },[])
 
     return (
         <div className="box-projects">
@@ -57,7 +30,8 @@ const Briefcase = () => {
             </article>
             <div className="worksSection">
                 <img src={Globant}/>
-                <p>I worked at globant for 1 year as a web development intern</p>
+                {/* <p>I worked at globant for 1 year as a web development intern</p> */}
+                <p>I am currently working with Globant</p>
             </div>
             <h2 className="titleProjects">projects</h2>
             <Projects project={project} />

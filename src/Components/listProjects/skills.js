@@ -1,9 +1,9 @@
 const Skills = ({skillId}) => {
     const skills = ["HTML" , "Css" , "Js" , "React"];
 
-    let skillUsed
+    let skillUsed;
 
-    if (skillId === 1 || skillId === 3 ) {
+    if (skillId === 1 || skillId === 3 || skillId === 4) {
         skillUsed = skills.filter(value => value === "React" || value === "Css");
     } else {
         skillUsed = skills.filter(value => value !== "React");
