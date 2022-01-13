@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import FotPerfil from '../../media/foto2.jpg'
+import { Link } from 'react-router-dom';
 import './About.css'
 
 const About = () => {
@@ -19,9 +19,10 @@ const About = () => {
                     of the people around me, I want to learn and further develop my skills as a Frontend developer, to be able to create
                     applications that help improve people's lives, creating solutions for great technological development.
                 </p>
+                <Link to="/Contact" className="contactButton">Contact Me</Link>
             </article>
             <article className="about-img">
-                <img src={FotPerfil}></img>
+                <img src="https://i.ibb.co/DQhRVhJ/foto2.jpg" alt="santiago guillen"></img>
                 <a href="https://drive.google.com/file/d/1M388wWELpyprjM1M8b_mPgG0TQxLZlC6/view?usp=sharing" target="_blank">
                     <section className="box-titleName">
                         know my cV<span className="icon-paper-plane"></span>

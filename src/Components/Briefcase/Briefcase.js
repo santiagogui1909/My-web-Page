@@ -30,7 +30,8 @@ const Briefcase = () => {
             </article>
             <div className="worksSection">
                 <img src={Globant}/>
-                <p>I worked at globant for 1 year as a web development intern</p>
+                {/* <p>I worked at globant for 1 year as a web development intern</p> */}
+                <p>I am currently working with Globant</p>
             </div>
             <h2 className="titleProjects">projects</h2>
             <Projects project={project} />

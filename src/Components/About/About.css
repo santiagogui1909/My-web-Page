@@ -1,6 +1,6 @@
 .about-container {
   display: flex;
-  padding: 80px 0 120px 0;
+  padding: 40px 0 38px 0;
   background: rgba(212, 212, 212, 0.363);
   flex-wrap: wrap;
 }
@@ -24,17 +24,29 @@
 
 .about-desc p {
   line-height: 2rem;
-  color: rgb(34, 34, 34);
-  padding-bottom: 18px;
+  color: rgb(0, 0, 0);
+  padding-bottom: 20px;
   font-size: 1.3rem;
+}
+
+.contactButton{
+  display: inline; 
+  width: 90px;
+  margin:20px 0px 0px 240px;
+  padding: 15px 30px;
+  border: none;
+  font-size: 1.1rem;
+  background:#02081d;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .about-img img {
   position: absolute;
   top: 663px;
   right: 0px;
-  width: 510px;
-  height: 95vh;
+  width: 480px;
+  height: 88.4vh;
 }
 
 a {
@@ -105,6 +117,18 @@ a {
     padding: 6px;
   }
 
+  .contactButton{
+    display: inline; 
+    width: 90px;
+    margin:20px auto;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.1rem;
+    background:#02081d;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
   .about-img img {
     position: relative;
     top: 0px;
@@ -119,8 +143,8 @@ a {
     top: 0px;
     width: 100%;
     margin: 25px 20px 0px 45px;
-    color: rgb(2, 8, 29);
-    background:#01f5e9;
+    color: #ffffff;
+    background:#06c2b8;
   }
 
   .box-titleName a {

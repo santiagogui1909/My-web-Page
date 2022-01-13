@@ -20,15 +20,16 @@
 
 .subTitle {
   color: #faf9f9;
-  ;
   font-size: 2.4rem;
   padding: 6px;
   text-align: center;
 }
 
 .card {
-  padding: 46px;
-  margin: 36px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(28, 204, 204, 0.178);
+  padding: 60px;
+  margin: 35px;
   background: rgba(255, 255, 255, 0.219);
   border-radius: 15px;
   border: 1px solid #6FFFE9;
@@ -38,17 +39,53 @@
   /* Firefox */
 }
 
-.card p {
-  font-weight: lighter;
-  text-align: center;
-  padding-top: 30px;
-  color: rgb(255, 255, 255);
-  font-size: 1.4rem;
+.infoCard{
+  position: absolute;
+  right: 12px;
+  width: 76%;
+  bottom: 0;
+  height: 40px;
+  padding: 0.4px 10px;
+  font-size: 0.800rem;
+  background: rgba(185, 185, 185, 0);
+  backdrop-filter: blur(12px);
+  transition: scale(0.9);
+  color: #fff;
+  border-radius: 10px 10px 0px 0px;
+  border: 1px solid rgba(253, 253, 253, 0.287);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.411);
+  overflow: hidden;
+  transition: all .4s;
 }
 
-.card:hover {
-  -webkit-transform: scale(1.25);
-  -moz-transform: scale(1.25);
+.infoCard h3{
+  font-size: 1.4rem;
+  padding:5px;
+  color: #0abce9;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.infoCard p{
+  font-size: 1.3em;
+  padding:15px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.infoCard p span{
+  font-weight: bold;
+  color: #07db23;
+}
+
+.infoCard .otherCardInfo{
+  font-size: 0.750rem;
+  padding:0px;
+  color: #ffffff;
+}
+
+.card:hover .infoCard{
+  height:100px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -68,8 +105,8 @@
 }
 
 .card img {
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 120px;
 }
 
 @media (max-width: 600px) {
@@ -81,7 +118,6 @@
 
   .title-front {
     color: #00f7ff;
-    ;
     font-size: 45px;
     text-align: center;
     padding: 10px;
@@ -92,13 +128,38 @@
     margin: 15px;
   }
 
-  .card p {
-    font-size: 1.1rem;
+  .infoCard{
+    position: absolute;
+    right: 8px;
+    width: 70%;
+    bottom: 0;
+    height: 25px;
+    padding: 0.4px 10px;
   }
-
+  
+  .infoCard h3{
+    font-size: 0.900rem;
+    padding:5px;
+  }
+  
+  .infoCard p{
+    font-size: 1.3em;
+  }
+  
+  .infoCard .otherCardInfo{
+    font-size: 0.700rem;
+    padding:0px;
+    color: #ffffff;
+  }
+  
+  .card:hover .infoCard{
+    height:140px;
+    background: rgba(0, 0, 0, 0.568);
+  }
+  
   .card img {
     width: 80px;
-    height: 70px;
+    height: 90px;
   }
 
 }
