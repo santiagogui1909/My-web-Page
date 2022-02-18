@@ -69,7 +69,7 @@ export default App;
 
 /* /* {onloadPaje === false ? 
         <section className="containerLoad">
-          <p>loading please wait... 🔌</p> 
+          <p>loading please wait... </p> 
           <img src={imgLoading}></img>
         </section>
       :  }*/
