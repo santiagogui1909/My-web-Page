@@ -20,6 +20,8 @@ const projects = ({ project }) => {
                             <label className="projectTitle">{value.name}</label>
                             <p className="information">{value.description}</p>
                             <Skills skillId={value.id} />
+
+                            {(value.id === 1) && <p className="messajeLink">Link it's broken</p>}   
                         </section>
                     </div>
                 </>

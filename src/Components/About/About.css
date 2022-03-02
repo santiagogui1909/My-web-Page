@@ -84,8 +84,33 @@ a {
   }
 }
 
-
 /* ---------------------- */
+
+@media (min-width: 1440px) {
+  .about-desc {
+    width: 54%;
+  }
+
+  .contactButton{
+    display: inline; 
+    width: 100px;
+    margin:20px 0px 0px 320px;
+    padding: 15px 60px;
+    border: none;
+    font-size: 1.2rem;
+  }
+  
+  .about-img img {
+    top: 800px;
+    height: 64.4vh;
+  }
+
+  .box-titleName {
+    position: relative;
+    top: 360px;
+    left: 60px;
+  }
+}
 
 @media (max-width: 600px) {
 
