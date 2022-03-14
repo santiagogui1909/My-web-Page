@@ -2,6 +2,7 @@ import Html from '../../media/Html.png';
 import Css from '../../media/Css.png';
 import Js from '../../media/JS.png';
 import React from '../../media/React.png';
+import Redux from '../../media/Redux.png';
 import Git from '../../media/git-icon.svg';
 import GitHub from '../../media/GitHub.png';
 import Figma from '../../media/figma.png';
@@ -48,24 +49,31 @@ const Knowledge = () => {
                         </div>
                     </div>
                     <div className="card">
+                        <img src={Redux} className="react-logo"></img>
+                        <div className="infoCard">
+                            <h3>redux</h3>
+                            <p>My level <span>20%</span></p>
+                        </div>
+                    </div>
+                    <div className="card">
                         <img src={Git} className="react-logo"></img>
                         <div className="infoCard">
                             <h3>git</h3>
-                            <p>My level <span>50%</span></p>
+                            <p>My level <span>40%</span></p>
                         </div>
                     </div>
                     <div className="card">
                         <img src={GitHub} className="react-logo"></img>
                         <div className="infoCard">
                             <h3>git hub</h3>
-                            <p>My level <span>50%</span></p>
+                            <p>My level <span>40%</span></p>
                         </div>
                     </div>
                     <div className="card">
                         <img src={Contentful} className="react-logo"></img>
                         <div className="infoCard">
                             <h3>contentful</h3>
-                            <p>My level <span>40%</span></p>
+                            <p>My level <span>30%</span></p>
                         </div>
                     </div>
                     <div className="card">
