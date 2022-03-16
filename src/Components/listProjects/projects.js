@@ -21,7 +21,7 @@ const projects = ({ project }) => {
                             <p className="information">{value.description}</p>
                             <Skills skillId={value.id} />
 
-                            {(value.id === 1) && <p className="messajeLink">Link it's broken</p>}   
+                            {(value.id === 3) && <p className="messajeLink">Link it's broken</p>}   
                         </section>
                     </div>
                 </>
