@@ -96,7 +96,7 @@ const Contact = () => {
 
                     <section className="info-contact">
                         <h4>email</h4>
-                        <p><span className="icon-gmail"></span>devsantiagogui@gmail.com</p>
+                        <p><span className="icon-gmail"></span>devsantiagoguillen@gmail.com</p>
                     </section>
                     <section className="info-contact">
                         <h4>phone</h4>
