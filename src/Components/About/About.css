@@ -29,20 +29,20 @@
   font-size: 1.3rem;
 }
 
-.contactButton{
-  display: inline; 
+.contactButton {
+  display: inline;
   width: 90px;
-  margin:20px 0px 0px 240px;
+  margin: 20px 0px 0px 240px;
   padding: 15px 30px;
   border: none;
   font-size: 1.1rem;
-  background:#02081d;
+  background: #02081d;
   color: #ffffff;
   cursor: pointer;
 }
 
-.contactButton:hover{
-  background:#05a8a0;
+.contactButton:hover {
+  background: #05a8a0;
   color: #ffffff;
 }
 
@@ -86,11 +86,11 @@ a {
 }
 
 @keyframes showInformation {
-  0%{
+  0% {
     opacity: 0;
   }
 
-  100%{
+  100% {
     opacity: 1;
   }
 }
@@ -102,24 +102,35 @@ a {
     width: 54%;
   }
 
-  .contactButton{
-    display: inline; 
+  .contactButton {
+    display: inline;
     width: 100px;
-    margin:20px 0px 0px 320px;
+    margin: 20px 0px 0px 320px;
     padding: 15px 60px;
     border: none;
     font-size: 1.2rem;
   }
-  
+
   .about-img img {
     top: 800px;
     height: 64.4vh;
+  }
+
+  a {
+    color: rgb(0, 192, 182);
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-transform: capitalize;
   }
 
   .box-titleName {
     position: relative;
     top: 360px;
     left: 60px;
+  }
+
+  .box-titleName:active {
+    top: 364px;
   }
 }
 
@@ -153,14 +164,14 @@ a {
     padding: 6px;
   }
 
-  .contactButton{
-    display: inline; 
+  .contactButton {
+    display: inline;
     width: 90px;
-    margin:20px auto;
+    margin: 20px auto;
     padding: 15px 30px;
     border: none;
     font-size: 1.1rem;
-    background:#02081d;
+    background: #02081d;
     color: #ffffff;
     cursor: pointer;
   }
@@ -180,7 +191,7 @@ a {
     width: 100%;
     margin: 25px 20px 0px 45px;
     color: #ffffff;
-    background:#06c2b8;
+    background: #06c2b8;
   }
 
   .box-titleName a {

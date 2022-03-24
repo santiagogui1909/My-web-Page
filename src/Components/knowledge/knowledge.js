@@ -6,7 +6,7 @@ import Redux from '../../media/Redux.png';
 import Git from '../../media/git-icon.svg';
 import GitHub from '../../media/GitHub.png';
 import Figma from '../../media/figma.png';
-import Contentful from '../../media/contentful-logo.png';
+import Sass from '../../media/sass.jpg';
 import Wordpress from '../../media/wordpress.svg';
 import Scrum from '../../media/Scrum.png';
 import SoftSkills from '../../media/softSkills.png';
@@ -32,6 +32,13 @@ const Knowledge = () => {
                         <div className="infoCard">
                             <h3>css</h3>
                             <p>My level <span>70%</span></p>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src={Sass} className="react-logo"></img>
+                        <div className="infoCard">
+                            <h3>Sass</h3>
+                            <p>My level <span>20%</span></p>
                         </div>
                     </div>
                     <div className="card">
@@ -67,13 +74,6 @@ const Knowledge = () => {
                         <div className="infoCard">
                             <h3>git hub</h3>
                             <p>My level <span>40%</span></p>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <img src={Contentful} className="react-logo"></img>
-                        <div className="infoCard">
-                            <h3>contentful</h3>
-                            <p>My level <span>30%</span></p>
                         </div>
                     </div>
                     <div className="card">
