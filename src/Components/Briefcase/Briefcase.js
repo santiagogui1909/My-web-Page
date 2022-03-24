@@ -29,9 +29,8 @@ const Briefcase = () => {
                 </section>
             </article>
             <div className="worksSection">
+                <p>¿Are you wondering where I have worked?</p>
                 <img src={Globant}/>
-                {/* <p>I worked at globant for 1 year as a web development intern</p> */}
-                <p>I am currently working with Globant</p>
             </div>
             <h2 className="titleProjects">projects</h2>
             <Projects project={project} />

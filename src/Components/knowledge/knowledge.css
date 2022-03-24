@@ -37,6 +37,7 @@
   /* Safari y Chrome */
   -moz-transition: all .9s ease;
   /* Firefox */
+  cursor: pointer;
 }
 
 .infoCard{

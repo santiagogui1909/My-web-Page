@@ -58,23 +58,25 @@
 }
 
 .worksSection {
-    background: #03071E;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    align-items: flex-start;
     padding: 40px;
-    text-align: center;
 }
 
 .worksSection img {
     width: 30%;
     background: #fdfdfd;
-    padding: 20px;
-    border-radius: 20px;
+    padding:20px;
+    border-radius: 10px;
+    margin-left: 280px;
 }
 
 .worksSection p {
-    padding: 5px;
+    padding: 30px;
     color: #fdfdfd;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 
@@ -243,17 +245,19 @@
     }
 
     .worksSection {
-        padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        padding: 40px;
     }
-
+    
     .worksSection img {
-        width: 100%;
-        padding: 0px;
+        width: 30%;
+        margin-left: 90px;
     }
-
+    
     .worksSection p {
-        padding: 10px;
-        font-size: 1rem;
+        padding: 20px;
+        font-size: 1.2rem;
     }
 
     .titleProjects {
