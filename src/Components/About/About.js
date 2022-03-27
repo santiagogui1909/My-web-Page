@@ -23,7 +23,7 @@ const About = () => {
             </article>
             <article className="about-img">
                 <img src="https://i.ibb.co/DQhRVhJ/foto2.jpg" alt="santiago guillen"></img>
-                <a href="https://drive.google.com/drive/u/2/folders/19D5mV1g5Fu6RE0fKDVwYxbB8SlHynwjl" target="_blank">
+                <a href="https://drive.google.com/drive/folders/19D5mV1g5Fu6RE0fKDVwYxbB8SlHynwjl?usp=sharing" target="_blank">
                     <section className="box-titleName">
                         know my cV<span className="icon-paper-plane"></span>
                     </section>
